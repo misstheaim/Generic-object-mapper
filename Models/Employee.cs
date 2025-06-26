@@ -10,5 +10,5 @@ internal record Employee
 
     public int Salary { get; set; } = 0;
 
-    public required Department? Department { get; set; }
+    public required Department Department { get; set; }
 }

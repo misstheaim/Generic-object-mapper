@@ -2,7 +2,6 @@
 
 internal record Sphere
 {
-    private const double numberPi = 3.14;
     public int Id { get; set; }
 
     public string? Name { get; set; }
@@ -17,11 +16,11 @@ internal record Sphere
         }
     }
 
-    public double sectionLength
+    public double SectionLength
     {
         get
         {
-            return Radius * 2  * numberPi;
+            return Radius * 2  * Math.PI;
         }
     }
 }
